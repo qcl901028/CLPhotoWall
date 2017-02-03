@@ -23,10 +23,8 @@
 
 @implementation CLPhotoAlbumViewController
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.title = @"相册";
     self.view.backgroundColor = [UIColor colorWithWhite:0.93 alpha:1];
     [self loadData];
@@ -195,7 +193,6 @@
     
     CLPhotoAssetViewController *vc = [[CLPhotoAssetViewController alloc] init];
     vc.assetCollection = assetCollection;
-    vc.maxCount = self.maxCount;
     CLPhotoAssetAlbumInfo *info = [CLLoadPhotoAsset  photoAssetAlbumInfoWithAssetCollection:assetCollection];
     vc.title = info.AlbumName;
     [self.navigationController pushViewController:vc animated:YES];
@@ -210,7 +207,6 @@
         CLPhotoAssetViewController *vc = [[CLPhotoAssetViewController alloc] init];
         vc.didSelectImageCount = self.didSelectCount;
         vc.assetCollection = collection;
-        vc.maxCount = self.maxCount;
         CLPhotoAssetAlbumInfo *info = [CLLoadPhotoAsset photoAssetAlbumInfoWithAssetCollection:collection];
         vc.title = info.AlbumName;
         [self.navigationController pushViewController:vc animated:NO];

@@ -23,6 +23,6 @@
 - (void)addSingleTap:(void(^)(UITapGestureRecognizer *))callBack;
 
 
-//- (void)setBackImage:(NSString *)url placeholderImage:(UIImage *)image;
+- (void)setBackImage:(NSString *)url placeholderImage:(UIImage *)image;
 
 @end

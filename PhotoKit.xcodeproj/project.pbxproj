@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		486D54AD1E44571700DFA99B /* CLPhotoWall.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 486D54AC1E44571700DFA99B /* CLPhotoWall.bundle */; };
+		486D54B01E44584200DFA99B /* UIImage+PhotoAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 486D54AF1E44584200DFA99B /* UIImage+PhotoAsset.m */; };
 		489945781E0A588C00EB1775 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 489945771E0A588C00EB1775 /* main.m */; };
 		4899457B1E0A588C00EB1775 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4899457A1E0A588C00EB1775 /* AppDelegate.m */; };
 		489945811E0A588C00EB1775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4899457F1E0A588C00EB1775 /* Main.storyboard */; };
@@ -14,26 +16,22 @@
 		489945861E0A588C00EB1775 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489945841E0A588C00EB1775 /* LaunchScreen.storyboard */; };
 		489945911E0A588C00EB1775 /* PhotoKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 489945901E0A588C00EB1775 /* PhotoKitTests.m */; };
 		4899459C1E0A588C00EB1775 /* PhotoKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4899459B1E0A588C00EB1775 /* PhotoKitUITests.m */; };
-		489945CB1E0A589D00EB1775 /* CLAlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 489945AC1E0A589D00EB1775 /* CLAlbumTableViewCell.m */; };
-		489945CC1E0A589D00EB1775 /* CLPhotoAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489945AE1E0A589D00EB1775 /* CLPhotoAlbumViewController.m */; };
-		489945CD1E0A589D00EB1775 /* CLPhotoAssetAlbumInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 489945B01E0A589D00EB1775 /* CLPhotoAssetAlbumInfo.m */; };
-		489945CE1E0A589D00EB1775 /* CLLargeImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 489945B41E0A589D00EB1775 /* CLLargeImageCollectionViewCell.m */; };
-		489945CF1E0A589D00EB1775 /* CLLargeImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489945B61E0A589D00EB1775 /* CLLargeImageViewController.m */; };
-		489945D01E0A589D00EB1775 /* CLLoadPhotoAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 489945B91E0A589D00EB1775 /* CLLoadPhotoAsset.m */; };
-		489945D11E0A589D00EB1775 /* CLPhotoAssetConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 489945BB1E0A589D00EB1775 /* CLPhotoAssetConst.m */; };
-		489945D21E0A589D00EB1775 /* CLScaleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 489945BD1E0A589D00EB1775 /* CLScaleImageView.m */; };
-		489945D31E0A589D00EB1775 /* CLPhotoAssetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 489945C01E0A589D00EB1775 /* CLPhotoAssetCollectionViewCell.m */; };
-		489945D41E0A589D00EB1775 /* CLPhotoAssetInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 489945C21E0A589D00EB1775 /* CLPhotoAssetInfo.m */; };
-		489945D51E0A589D00EB1775 /* CLPhotoAssetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489945C41E0A589D00EB1775 /* CLPhotoAssetViewController.m */; };
-		489945D61E0A589D00EB1775 /* def_picker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 489945C61E0A589D00EB1775 /* def_picker@2x.png */; };
-		489945D71E0A589D00EB1775 /* nagation_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 489945C71E0A589D00EB1775 /* nagation_back.png */; };
-		489945D81E0A589D00EB1775 /* nagation_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 489945C81E0A589D00EB1775 /* nagation_back@2x.png */; };
-		489945D91E0A589D00EB1775 /* nagation_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 489945C91E0A589D00EB1775 /* nagation_back@3x.png */; };
-		489945DA1E0A589D00EB1775 /* sel_picker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 489945CA1E0A589D00EB1775 /* sel_picker@2x.png */; };
 		489945E11E0A6A7200EB1775 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489945DF1E0A6A7200EB1775 /* ViewController.m */; };
 		489945E21E0A6A7200EB1775 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489945E01E0A6A7200EB1775 /* ViewController.xib */; };
 		489945E91E0A6B3500EB1775 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 489945E71E0A6B3500EB1775 /* CollectionViewCell.m */; };
 		489945EA1E0A6B3500EB1775 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489945E81E0A6B3500EB1775 /* CollectionViewCell.xib */; };
+		48C1DA581E36FB0900E39C0E /* CLAlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1DA371E36FB0900E39C0E /* CLAlbumTableViewCell.m */; };
+		48C1DA591E36FB0900E39C0E /* CLPhotoAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1DA391E36FB0900E39C0E /* CLPhotoAlbumViewController.m */; };
+		48C1DA5A1E36FB0900E39C0E /* CLPhotoAssetAlbumInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1DA3B1E36FB0900E39C0E /* CLPhotoAssetAlbumInfo.m */; };
+		48C1DA5B1E36FB0900E39C0E /* CLCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1DA3F1E36FB0900E39C0E /* CLCollectionViewLayout.m */; };
+		48C1DA5C1E36FB0900E39C0E /* CLLargeImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1DA411E36FB0900E39C0E /* CLLargeImageCollectionViewCell.m */; };
+		48C1DA5D1E36FB0900E39C0E /* CLLargeImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1DA431E36FB0900E39C0E /* CLLargeImageViewController.m */; };
+		48C1DA5E1E36FB0900E39C0E /* CLLoadPhotoAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1DA461E36FB0900E39C0E /* CLLoadPhotoAsset.m */; };
+		48C1DA5F1E36FB0900E39C0E /* CLPhotoAssetConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1DA481E36FB0900E39C0E /* CLPhotoAssetConst.m */; };
+		48C1DA601E36FB0900E39C0E /* CLScaleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1DA4A1E36FB0900E39C0E /* CLScaleImageView.m */; };
+		48C1DA611E36FB0900E39C0E /* CLPhotoAssetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1DA4D1E36FB0900E39C0E /* CLPhotoAssetCollectionViewCell.m */; };
+		48C1DA621E36FB0900E39C0E /* CLPhotoAssetInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1DA4F1E36FB0900E39C0E /* CLPhotoAssetInfo.m */; };
+		48C1DA631E36FB0900E39C0E /* CLPhotoAssetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1DA511E36FB0900E39C0E /* CLPhotoAssetViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		486D54AC1E44571700DFA99B /* CLPhotoWall.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CLPhotoWall.bundle; sourceTree = "<group>"; };
+		486D54AE1E44584200DFA99B /* UIImage+PhotoAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PhotoAsset.h"; sourceTree = "<group>"; };
+		486D54AF1E44584200DFA99B /* UIImage+PhotoAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PhotoAsset.m"; sourceTree = "<group>"; };
 		489945731E0A588C00EB1775 /* PhotoKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		489945771E0A588C00EB1775 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		489945791E0A588C00EB1775 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,40 +69,37 @@
 		489945971E0A588C00EB1775 /* PhotoKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4899459B1E0A588C00EB1775 /* PhotoKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoKitUITests.m; sourceTree = "<group>"; };
 		4899459D1E0A588C00EB1775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		489945AB1E0A589D00EB1775 /* CLAlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAlbumTableViewCell.h; sourceTree = "<group>"; };
-		489945AC1E0A589D00EB1775 /* CLAlbumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLAlbumTableViewCell.m; sourceTree = "<group>"; };
-		489945AD1E0A589D00EB1775 /* CLPhotoAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPhotoAlbumViewController.h; sourceTree = "<group>"; };
-		489945AE1E0A589D00EB1775 /* CLPhotoAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPhotoAlbumViewController.m; sourceTree = "<group>"; };
-		489945AF1E0A589D00EB1775 /* CLPhotoAssetAlbumInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPhotoAssetAlbumInfo.h; sourceTree = "<group>"; };
-		489945B01E0A589D00EB1775 /* CLPhotoAssetAlbumInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPhotoAssetAlbumInfo.m; sourceTree = "<group>"; };
-		489945B11E0A589D00EB1775 /* CLPhotoWall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPhotoWall.h; sourceTree = "<group>"; };
-		489945B31E0A589D00EB1775 /* CLLargeImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLargeImageCollectionViewCell.h; sourceTree = "<group>"; };
-		489945B41E0A589D00EB1775 /* CLLargeImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLargeImageCollectionViewCell.m; sourceTree = "<group>"; };
-		489945B51E0A589D00EB1775 /* CLLargeImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLargeImageViewController.h; sourceTree = "<group>"; };
-		489945B61E0A589D00EB1775 /* CLLargeImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLargeImageViewController.m; sourceTree = "<group>"; };
-		489945B81E0A589D00EB1775 /* CLLoadPhotoAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLoadPhotoAsset.h; sourceTree = "<group>"; };
-		489945B91E0A589D00EB1775 /* CLLoadPhotoAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLoadPhotoAsset.m; sourceTree = "<group>"; };
-		489945BA1E0A589D00EB1775 /* CLPhotoAssetConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPhotoAssetConst.h; sourceTree = "<group>"; };
-		489945BB1E0A589D00EB1775 /* CLPhotoAssetConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPhotoAssetConst.m; sourceTree = "<group>"; };
-		489945BC1E0A589D00EB1775 /* CLScaleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScaleImageView.h; sourceTree = "<group>"; };
-		489945BD1E0A589D00EB1775 /* CLScaleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLScaleImageView.m; sourceTree = "<group>"; };
-		489945BF1E0A589D00EB1775 /* CLPhotoAssetCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPhotoAssetCollectionViewCell.h; sourceTree = "<group>"; };
-		489945C01E0A589D00EB1775 /* CLPhotoAssetCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPhotoAssetCollectionViewCell.m; sourceTree = "<group>"; };
-		489945C11E0A589D00EB1775 /* CLPhotoAssetInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPhotoAssetInfo.h; sourceTree = "<group>"; };
-		489945C21E0A589D00EB1775 /* CLPhotoAssetInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPhotoAssetInfo.m; sourceTree = "<group>"; };
-		489945C31E0A589D00EB1775 /* CLPhotoAssetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPhotoAssetViewController.h; sourceTree = "<group>"; };
-		489945C41E0A589D00EB1775 /* CLPhotoAssetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPhotoAssetViewController.m; sourceTree = "<group>"; };
-		489945C61E0A589D00EB1775 /* def_picker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "def_picker@2x.png"; sourceTree = "<group>"; };
-		489945C71E0A589D00EB1775 /* nagation_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nagation_back.png; sourceTree = "<group>"; };
-		489945C81E0A589D00EB1775 /* nagation_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nagation_back@2x.png"; sourceTree = "<group>"; };
-		489945C91E0A589D00EB1775 /* nagation_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nagation_back@3x.png"; sourceTree = "<group>"; };
-		489945CA1E0A589D00EB1775 /* sel_picker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sel_picker@2x.png"; sourceTree = "<group>"; };
 		489945DE1E0A6A7200EB1775 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		489945DF1E0A6A7200EB1775 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		489945E01E0A6A7200EB1775 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		489945E61E0A6B3500EB1775 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		489945E71E0A6B3500EB1775 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		489945E81E0A6B3500EB1775 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		48C1DA361E36FB0900E39C0E /* CLAlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAlbumTableViewCell.h; sourceTree = "<group>"; };
+		48C1DA371E36FB0900E39C0E /* CLAlbumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLAlbumTableViewCell.m; sourceTree = "<group>"; };
+		48C1DA381E36FB0900E39C0E /* CLPhotoAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPhotoAlbumViewController.h; sourceTree = "<group>"; };
+		48C1DA391E36FB0900E39C0E /* CLPhotoAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPhotoAlbumViewController.m; sourceTree = "<group>"; };
+		48C1DA3A1E36FB0900E39C0E /* CLPhotoAssetAlbumInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPhotoAssetAlbumInfo.h; sourceTree = "<group>"; };
+		48C1DA3B1E36FB0900E39C0E /* CLPhotoAssetAlbumInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPhotoAssetAlbumInfo.m; sourceTree = "<group>"; };
+		48C1DA3C1E36FB0900E39C0E /* CLPhotoWall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPhotoWall.h; sourceTree = "<group>"; };
+		48C1DA3E1E36FB0900E39C0E /* CLCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCollectionViewLayout.h; sourceTree = "<group>"; };
+		48C1DA3F1E36FB0900E39C0E /* CLCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCollectionViewLayout.m; sourceTree = "<group>"; };
+		48C1DA401E36FB0900E39C0E /* CLLargeImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLargeImageCollectionViewCell.h; sourceTree = "<group>"; };
+		48C1DA411E36FB0900E39C0E /* CLLargeImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLargeImageCollectionViewCell.m; sourceTree = "<group>"; };
+		48C1DA421E36FB0900E39C0E /* CLLargeImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLargeImageViewController.h; sourceTree = "<group>"; };
+		48C1DA431E36FB0900E39C0E /* CLLargeImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLargeImageViewController.m; sourceTree = "<group>"; };
+		48C1DA451E36FB0900E39C0E /* CLLoadPhotoAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLoadPhotoAsset.h; sourceTree = "<group>"; };
+		48C1DA461E36FB0900E39C0E /* CLLoadPhotoAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLoadPhotoAsset.m; sourceTree = "<group>"; };
+		48C1DA471E36FB0900E39C0E /* CLPhotoAssetConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPhotoAssetConst.h; sourceTree = "<group>"; };
+		48C1DA481E36FB0900E39C0E /* CLPhotoAssetConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPhotoAssetConst.m; sourceTree = "<group>"; };
+		48C1DA491E36FB0900E39C0E /* CLScaleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScaleImageView.h; sourceTree = "<group>"; };
+		48C1DA4A1E36FB0900E39C0E /* CLScaleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLScaleImageView.m; sourceTree = "<group>"; };
+		48C1DA4C1E36FB0900E39C0E /* CLPhotoAssetCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPhotoAssetCollectionViewCell.h; sourceTree = "<group>"; };
+		48C1DA4D1E36FB0900E39C0E /* CLPhotoAssetCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPhotoAssetCollectionViewCell.m; sourceTree = "<group>"; };
+		48C1DA4E1E36FB0900E39C0E /* CLPhotoAssetInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPhotoAssetInfo.h; sourceTree = "<group>"; };
+		48C1DA4F1E36FB0900E39C0E /* CLPhotoAssetInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPhotoAssetInfo.m; sourceTree = "<group>"; };
+		48C1DA501E36FB0900E39C0E /* CLPhotoAssetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPhotoAssetViewController.h; sourceTree = "<group>"; };
+		48C1DA511E36FB0900E39C0E /* CLPhotoAssetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPhotoAssetViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +150,7 @@
 		489945751E0A588C00EB1775 /* PhotoKit */ = {
 			isa = PBXGroup;
 			children = (
-				489945A91E0A589D00EB1775 /* CLPhotoWall */,
+				48C1DA341E36FB0900E39C0E /* CLPhotoWall */,
 				489945791E0A588C00EB1775 /* AppDelegate.h */,
 				4899457A1E0A588C00EB1775 /* AppDelegate.m */,
 				489945DE1E0A6A7200EB1775 /* ViewController.h */,
@@ -196,77 +194,77 @@
 			path = PhotoKitUITests;
 			sourceTree = "<group>";
 		};
-		489945A91E0A589D00EB1775 /* CLPhotoWall */ = {
+		48C1DA341E36FB0900E39C0E /* CLPhotoWall */ = {
 			isa = PBXGroup;
 			children = (
-				489945AA1E0A589D00EB1775 /* album */,
-				489945B11E0A589D00EB1775 /* CLPhotoWall.h */,
-				489945B21E0A589D00EB1775 /* detail */,
-				489945B71E0A589D00EB1775 /* helper */,
-				489945BE1E0A589D00EB1775 /* photo */,
-				489945C51E0A589D00EB1775 /* source */,
+				48C1DA351E36FB0900E39C0E /* album */,
+				48C1DA3C1E36FB0900E39C0E /* CLPhotoWall.h */,
+				48C1DA3D1E36FB0900E39C0E /* detail */,
+				48C1DA441E36FB0900E39C0E /* helper */,
+				48C1DA4B1E36FB0900E39C0E /* photo */,
+				48C1DA521E36FB0900E39C0E /* source */,
 			);
 			path = CLPhotoWall;
 			sourceTree = "<group>";
 		};
-		489945AA1E0A589D00EB1775 /* album */ = {
+		48C1DA351E36FB0900E39C0E /* album */ = {
 			isa = PBXGroup;
 			children = (
-				489945AB1E0A589D00EB1775 /* CLAlbumTableViewCell.h */,
-				489945AC1E0A589D00EB1775 /* CLAlbumTableViewCell.m */,
-				489945AD1E0A589D00EB1775 /* CLPhotoAlbumViewController.h */,
-				489945AE1E0A589D00EB1775 /* CLPhotoAlbumViewController.m */,
-				489945AF1E0A589D00EB1775 /* CLPhotoAssetAlbumInfo.h */,
-				489945B01E0A589D00EB1775 /* CLPhotoAssetAlbumInfo.m */,
+				48C1DA361E36FB0900E39C0E /* CLAlbumTableViewCell.h */,
+				48C1DA371E36FB0900E39C0E /* CLAlbumTableViewCell.m */,
+				48C1DA381E36FB0900E39C0E /* CLPhotoAlbumViewController.h */,
+				48C1DA391E36FB0900E39C0E /* CLPhotoAlbumViewController.m */,
+				48C1DA3A1E36FB0900E39C0E /* CLPhotoAssetAlbumInfo.h */,
+				48C1DA3B1E36FB0900E39C0E /* CLPhotoAssetAlbumInfo.m */,
 			);
 			path = album;
 			sourceTree = "<group>";
 		};
-		489945B21E0A589D00EB1775 /* detail */ = {
+		48C1DA3D1E36FB0900E39C0E /* detail */ = {
 			isa = PBXGroup;
 			children = (
-				489945B31E0A589D00EB1775 /* CLLargeImageCollectionViewCell.h */,
-				489945B41E0A589D00EB1775 /* CLLargeImageCollectionViewCell.m */,
-				489945B51E0A589D00EB1775 /* CLLargeImageViewController.h */,
-				489945B61E0A589D00EB1775 /* CLLargeImageViewController.m */,
+				48C1DA3E1E36FB0900E39C0E /* CLCollectionViewLayout.h */,
+				48C1DA3F1E36FB0900E39C0E /* CLCollectionViewLayout.m */,
+				48C1DA401E36FB0900E39C0E /* CLLargeImageCollectionViewCell.h */,
+				48C1DA411E36FB0900E39C0E /* CLLargeImageCollectionViewCell.m */,
+				48C1DA421E36FB0900E39C0E /* CLLargeImageViewController.h */,
+				48C1DA431E36FB0900E39C0E /* CLLargeImageViewController.m */,
 			);
 			path = detail;
 			sourceTree = "<group>";
 		};
-		489945B71E0A589D00EB1775 /* helper */ = {
+		48C1DA441E36FB0900E39C0E /* helper */ = {
 			isa = PBXGroup;
 			children = (
-				489945B81E0A589D00EB1775 /* CLLoadPhotoAsset.h */,
-				489945B91E0A589D00EB1775 /* CLLoadPhotoAsset.m */,
-				489945BA1E0A589D00EB1775 /* CLPhotoAssetConst.h */,
-				489945BB1E0A589D00EB1775 /* CLPhotoAssetConst.m */,
-				489945BC1E0A589D00EB1775 /* CLScaleImageView.h */,
-				489945BD1E0A589D00EB1775 /* CLScaleImageView.m */,
+				48C1DA451E36FB0900E39C0E /* CLLoadPhotoAsset.h */,
+				48C1DA461E36FB0900E39C0E /* CLLoadPhotoAsset.m */,
+				48C1DA471E36FB0900E39C0E /* CLPhotoAssetConst.h */,
+				48C1DA481E36FB0900E39C0E /* CLPhotoAssetConst.m */,
+				48C1DA491E36FB0900E39C0E /* CLScaleImageView.h */,
+				48C1DA4A1E36FB0900E39C0E /* CLScaleImageView.m */,
+				486D54AE1E44584200DFA99B /* UIImage+PhotoAsset.h */,
+				486D54AF1E44584200DFA99B /* UIImage+PhotoAsset.m */,
 			);
 			path = helper;
 			sourceTree = "<group>";
 		};
-		489945BE1E0A589D00EB1775 /* photo */ = {
+		48C1DA4B1E36FB0900E39C0E /* photo */ = {
 			isa = PBXGroup;
 			children = (
-				489945BF1E0A589D00EB1775 /* CLPhotoAssetCollectionViewCell.h */,
-				489945C01E0A589D00EB1775 /* CLPhotoAssetCollectionViewCell.m */,
-				489945C11E0A589D00EB1775 /* CLPhotoAssetInfo.h */,
-				489945C21E0A589D00EB1775 /* CLPhotoAssetInfo.m */,
-				489945C31E0A589D00EB1775 /* CLPhotoAssetViewController.h */,
-				489945C41E0A589D00EB1775 /* CLPhotoAssetViewController.m */,
+				48C1DA4C1E36FB0900E39C0E /* CLPhotoAssetCollectionViewCell.h */,
+				48C1DA4D1E36FB0900E39C0E /* CLPhotoAssetCollectionViewCell.m */,
+				48C1DA4E1E36FB0900E39C0E /* CLPhotoAssetInfo.h */,
+				48C1DA4F1E36FB0900E39C0E /* CLPhotoAssetInfo.m */,
+				48C1DA501E36FB0900E39C0E /* CLPhotoAssetViewController.h */,
+				48C1DA511E36FB0900E39C0E /* CLPhotoAssetViewController.m */,
 			);
 			path = photo;
 			sourceTree = "<group>";
 		};
-		489945C51E0A589D00EB1775 /* source */ = {
+		48C1DA521E36FB0900E39C0E /* source */ = {
 			isa = PBXGroup;
 			children = (
-				489945C61E0A589D00EB1775 /* def_picker@2x.png */,
-				489945C71E0A589D00EB1775 /* nagation_back.png */,
-				489945C81E0A589D00EB1775 /* nagation_back@2x.png */,
-				489945C91E0A589D00EB1775 /* nagation_back@3x.png */,
-				489945CA1E0A589D00EB1775 /* sel_picker@2x.png */,
+				486D54AC1E44571700DFA99B /* CLPhotoWall.bundle */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -383,13 +381,9 @@
 				489945861E0A588C00EB1775 /* LaunchScreen.storyboard in Resources */,
 				489945E21E0A6A7200EB1775 /* ViewController.xib in Resources */,
 				489945831E0A588C00EB1775 /* Assets.xcassets in Resources */,
-				489945D81E0A589D00EB1775 /* nagation_back@2x.png in Resources */,
+				486D54AD1E44571700DFA99B /* CLPhotoWall.bundle in Resources */,
 				489945EA1E0A6B3500EB1775 /* CollectionViewCell.xib in Resources */,
-				489945D61E0A589D00EB1775 /* def_picker@2x.png in Resources */,
-				489945D91E0A589D00EB1775 /* nagation_back@3x.png in Resources */,
-				489945D71E0A589D00EB1775 /* nagation_back.png in Resources */,
 				489945811E0A588C00EB1775 /* Main.storyboard in Resources */,
-				489945DA1E0A589D00EB1775 /* sel_picker@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,21 +408,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48C1DA5E1E36FB0900E39C0E /* CLLoadPhotoAsset.m in Sources */,
+				48C1DA591E36FB0900E39C0E /* CLPhotoAlbumViewController.m in Sources */,
+				48C1DA5F1E36FB0900E39C0E /* CLPhotoAssetConst.m in Sources */,
+				48C1DA5C1E36FB0900E39C0E /* CLLargeImageCollectionViewCell.m in Sources */,
+				48C1DA581E36FB0900E39C0E /* CLAlbumTableViewCell.m in Sources */,
+				48C1DA5D1E36FB0900E39C0E /* CLLargeImageViewController.m in Sources */,
+				48C1DA5A1E36FB0900E39C0E /* CLPhotoAssetAlbumInfo.m in Sources */,
+				486D54B01E44584200DFA99B /* UIImage+PhotoAsset.m in Sources */,
+				48C1DA601E36FB0900E39C0E /* CLScaleImageView.m in Sources */,
+				48C1DA611E36FB0900E39C0E /* CLPhotoAssetCollectionViewCell.m in Sources */,
 				489945E11E0A6A7200EB1775 /* ViewController.m in Sources */,
-				489945D11E0A589D00EB1775 /* CLPhotoAssetConst.m in Sources */,
-				489945CC1E0A589D00EB1775 /* CLPhotoAlbumViewController.m in Sources */,
-				489945D01E0A589D00EB1775 /* CLLoadPhotoAsset.m in Sources */,
-				489945CB1E0A589D00EB1775 /* CLAlbumTableViewCell.m in Sources */,
-				489945CD1E0A589D00EB1775 /* CLPhotoAssetAlbumInfo.m in Sources */,
 				489945E91E0A6B3500EB1775 /* CollectionViewCell.m in Sources */,
-				489945CF1E0A589D00EB1775 /* CLLargeImageViewController.m in Sources */,
-				489945D41E0A589D00EB1775 /* CLPhotoAssetInfo.m in Sources */,
-				489945CE1E0A589D00EB1775 /* CLLargeImageCollectionViewCell.m in Sources */,
 				4899457B1E0A588C00EB1775 /* AppDelegate.m in Sources */,
 				489945781E0A588C00EB1775 /* main.m in Sources */,
-				489945D51E0A589D00EB1775 /* CLPhotoAssetViewController.m in Sources */,
-				489945D31E0A589D00EB1775 /* CLPhotoAssetCollectionViewCell.m in Sources */,
-				489945D21E0A589D00EB1775 /* CLScaleImageView.m in Sources */,
+				48C1DA621E36FB0900E39C0E /* CLPhotoAssetInfo.m in Sources */,
+				48C1DA5B1E36FB0900E39C0E /* CLCollectionViewLayout.m in Sources */,
+				48C1DA631E36FB0900E39C0E /* CLPhotoAssetViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,6 +664,7 @@
 				489945A21E0A588C00EB1775 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		489945A31E0A588C00EB1775 /* Build configuration list for PBXNativeTarget "PhotoKitTests" */ = {
 			isa = XCConfigurationList;
@@ -676,6 +673,7 @@
 				489945A51E0A588C00EB1775 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		489945A61E0A588C00EB1775 /* Build configuration list for PBXNativeTarget "PhotoKitUITests" */ = {
 			isa = XCConfigurationList;
@@ -684,6 +682,7 @@
 				489945A81E0A588C00EB1775 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

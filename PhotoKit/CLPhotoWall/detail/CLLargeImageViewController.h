@@ -27,6 +27,5 @@
 @property (nonatomic, strong) NSMutableArray *selectArr;
 @property (nonatomic, assign) NSInteger didSelectCount;
 @property (nonatomic, weak) id<CLLargeImagePopViewDelegate> delegate;
-@property (nonatomic, assign) NSUInteger maxCount;
 
 @end

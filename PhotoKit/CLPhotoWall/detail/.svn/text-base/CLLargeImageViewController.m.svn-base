@@ -12,6 +12,8 @@
 #import "CLPhotoAssetConst.h"
 #import "CLPhotoAssetInfo.h"
 #import <MBProgressHUD.h>
+#import "CLCollectionViewLayout.h"
+
 
 
 @interface CLLargeImageViewController ()<UICollectionViewDelegateFlowLayout, UICollectionViewDataSource,LargeImageCollectionViewDelegate>
@@ -305,7 +307,7 @@
     
     if (!_collectionView) {
         
-        UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+        CLCollectionViewLayout *flowLayout = [[CLCollectionViewLayout alloc] init];
         flowLayout.minimumLineSpacing = 0;
         flowLayout.minimumInteritemSpacing = 0;
         flowLayout.itemSize = CGSizeMake([UIScreen mainScreen].bounds.size.width,self.view.frame.size.height);

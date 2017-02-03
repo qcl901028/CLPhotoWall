@@ -9,7 +9,6 @@
 #import "CLLargeImageCollectionViewCell.h"
 #import "CLLoadPhotoAsset.h"
 @interface CLLargeImageCollectionViewCell ()
-
 @end
 
 
@@ -19,6 +18,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        self.layer.shouldRasterize = YES;
         [self.contentView addSubview:self.imageView];
     }
     return self;

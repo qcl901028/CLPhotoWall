@@ -16,6 +16,6 @@
 
 @property (nonatomic, strong) PHAssetCollection *assetCollection;
 @property (nonatomic, assign) NSInteger didSelectImageCount;
-@property (nonatomic, assign) NSUInteger maxCount;
+
 
 @end

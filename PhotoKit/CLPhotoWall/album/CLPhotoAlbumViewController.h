@@ -12,6 +12,6 @@
 
 @property (nonatomic, assign) NSInteger didSelectCount;
 
-@property (nonatomic, assign) NSUInteger maxCount;
+@property (nonatomic, assign) NSInteger maxCount;
 
 @end

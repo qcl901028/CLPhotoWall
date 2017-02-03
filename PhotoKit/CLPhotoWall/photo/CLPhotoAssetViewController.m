@@ -12,6 +12,7 @@
 #import "CLLargeImageViewController.h"
 #import "CLPhotoAssetConst.h"
 #import "CLPhotoAssetInfo.h"
+#import "UIImage+PhotoAsset.h"
 
 #define width [UIScreen mainScreen].bounds.size.width
 #define height [UIScreen mainScreen].bounds.size.height
@@ -232,16 +233,27 @@
     }];
     
     if (info.selected) {
-        [cell.selectBtn setBackgroundImage:[UIImage imageNamed:@"sel_picker"] forState:UIControlStateNormal];
+        [cell.selectBtn setBackgroundImage:[self imageNamed:@"sel_picker"] forState:UIControlStateNormal];
     } else {
         
-        [cell.selectBtn setBackgroundImage:[UIImage imageNamed:@"def_picker"] forState:UIControlStateNormal];
+        [cell.selectBtn setBackgroundImage:[self imageNamed:@"def_picker"] forState:UIControlStateNormal];
         
     }
     
     cell.delegate = self;
     return cell;
 }
+
+
+// 图片路径
+#define CLPhotoWallSrcName(file) [@"CLPhotoWall.bundle" stringByAppendingPathComponent:file]
+
+- (UIImage *)imageNamed:(NSString *)imageName {
+    
+    return [UIImage imageNamed:CLPhotoWallSrcName(imageName)];
+    
+}
+
 
 
 
@@ -264,7 +276,6 @@
     
     largeImage.didSelectCount = self.didSelectImageCount;
     largeImage.indexPath = indexPath;
-    largeImage.maxCount = self.maxCount;
     [largeImage.dataSource addObjectsFromArray:self.dataSource];
     [largeImage.selectArr addObjectsFromArray:self.selectArr];
     largeImage.delegate = self;
@@ -284,7 +295,7 @@
     CLPhotoAssetCollectionViewCell *cell = (id)view;
     NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
     CLPhotoAssetInfo *info = self.dataSource[indexPath.row];
-    
+
     if (info.selected) {
         
         info.selected = NO;
@@ -292,22 +303,19 @@
         
     } else {
         
-        if (self.maxCount){
+        
+        if (self.selectArr.count + self.didSelectImageCount >=5) {
             
             
-            if (self.selectArr.count + self.didSelectImageCount >= self.maxCount) {
-                
-                
-                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:[NSString stringWithFormat:@"你最多选择%ld张图片", self.maxCount-self.didSelectImageCount] preferredStyle:UIAlertControllerStyleAlert];
-                [alertController addAction:[UIAlertAction actionWithTitle:@"我知道了" style:UIAlertActionStyleCancel handler:nil]];
-                
-                [self presentViewController:alertController animated:YES completion:nil];
-                
-                
-                return;
-                
-                
-            }
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:[NSString stringWithFormat:@"你最多选择%ld张图片", 5-self.didSelectImageCount] preferredStyle:UIAlertControllerStyleAlert];
+            [alertController addAction:[UIAlertAction actionWithTitle:@"我知道了" style:UIAlertActionStyleCancel handler:nil]];
+            
+            [self presentViewController:alertController animated:YES completion:nil];
+            
+            
+            return;
+            
+            
         }
         
         info.selected = YES;
@@ -365,7 +373,6 @@
         [largeImage.dataSource addObjectsFromArray:self.selectArr];
         [largeImage.selectArr addObjectsFromArray:self.selectArr];
         largeImage.delegate = self;
-        largeImage.maxCount = self.maxCount;
         [self.navigationController pushViewController:largeImage animated:YES];
     }
     

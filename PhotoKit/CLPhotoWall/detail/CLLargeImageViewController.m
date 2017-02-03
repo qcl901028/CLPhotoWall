@@ -11,6 +11,8 @@
 #import "CLLargeImageCollectionViewCell.h"
 #import "CLPhotoAssetConst.h"
 #import "CLPhotoAssetInfo.h"
+#import "CLCollectionViewLayout.h"
+#import "UIImage+PhotoAsset.h"
 
 
 @interface CLLargeImageViewController ()<UICollectionViewDelegateFlowLayout, UICollectionViewDataSource,LargeImageCollectionViewDelegate,UINavigationControllerDelegate>
@@ -42,16 +44,11 @@
 }
 
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    // 判断要显示的控制器是否是自己
-    BOOL isShowHomePage = [viewController isKindOfClass:[self class]];
-    [self.navigationController setNavigationBarHidden:isShowHomePage animated:YES];
-
-    [UIApplication sharedApplication].statusBarHidden = isShowHomePage;
-}
-
-- (BOOL)prefersStatusBarHidden
-{
-    return YES;
+    
+    
+    [self.navigationController setNavigationBarHidden:[viewController isKindOfClass:[self class]] animated:YES];
+    
+    
 }
 
 
@@ -96,35 +93,45 @@
         
         info.selected = NO;
         [self.selectArr removeObject:info];
-        [self.selectBtn setBackgroundImage:[UIImage imageNamed:@"def_picker"] forState:UIControlStateNormal];
+        [self.selectBtn setBackgroundImage:[self imageNamed:@"def_picker"] forState:UIControlStateNormal];
         
         
     } else {
         
-        if (self.maxCount) {
+        if (self.selectArr.count + self.didSelectCount >=5) {
             
-            if (self.selectArr.count + self.didSelectCount >=self.maxCount) {
-                
-                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:[NSString stringWithFormat:@"你最多选择%ld张图片", self.maxCount - self.didSelectCount] preferredStyle:UIAlertControllerStyleAlert];
-                [alertController addAction:[UIAlertAction actionWithTitle:@"我知道了" style:UIAlertActionStyleCancel handler:nil]];
-                
-                [self presentViewController:alertController animated:YES completion:nil];
-                
-                
-                return;
-                
-            }
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:[NSString stringWithFormat:@"你最多选择%ld张图片", 5-self.didSelectCount] preferredStyle:UIAlertControllerStyleAlert];
+            [alertController addAction:[UIAlertAction actionWithTitle:@"我知道了" style:UIAlertActionStyleCancel handler:nil]];
+            
+            [self presentViewController:alertController animated:YES completion:nil];
+            
+            
+            return;
             
         }
+        
+        
         info.selected = YES;
         [self.selectArr addObject:info];
-        [self.selectBtn setBackgroundImage:[UIImage imageNamed:@"sel_picker"] forState:UIControlStateNormal];
+        [self.selectBtn setBackgroundImage:[self imageNamed:@"sel_picker"] forState:UIControlStateNormal];
     }
     
     [self.dataSource replaceObjectAtIndex:index withObject:info];
     
     
 }
+
+
+// 图片路径
+#define CLPhotoWallSrcName(file) [@"CLPhotoWall.bundle" stringByAppendingPathComponent:file]
+
+- (UIImage *)imageNamed:(NSString *)imageName {
+
+    return [UIImage imageNamed:CLPhotoWallSrcName(imageName)];
+    
+}
+
+
 
 - (void)navigationBackItemClick {
     
@@ -143,7 +150,7 @@
 - (void)navBarLayout {
     
     [self.view addSubview:self.navBar];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_navBar(64)]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_navBar)]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_navBar(60)]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_navBar)]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_navBar]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_navBar)]];
     
 }
@@ -179,7 +186,7 @@
         
         _navigationBackItem = [UIButton buttonWithType:UIButtonTypeSystem];
         
-        [_navigationBackItem setBackgroundImage:[UIImage imageNamed:@"nagation_back"] forState:UIControlStateNormal];
+        [_navigationBackItem setBackgroundImage:[self imageNamed:@"nagation_back"] forState:UIControlStateNormal];
         _navigationBackItem.translatesAutoresizingMaskIntoConstraints = NO;
         [_navigationBackItem addTarget:self action:@selector(navigationBackItemClick) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -204,7 +211,7 @@
     if (!_selectBtn) {
         
         _selectBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-        [_selectBtn setBackgroundImage:[UIImage imageNamed:@"def_picker"] forState:UIControlStateNormal];
+        [_selectBtn setBackgroundImage:[self imageNamed:@"def_picker"] forState:UIControlStateNormal];
         _selectBtn.translatesAutoresizingMaskIntoConstraints = NO;
         [_selectBtn addTarget:self action:@selector(selectBtnClick) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -270,13 +277,13 @@
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
 }
 
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-
-
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
 }
 
 
@@ -311,6 +318,8 @@
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_collectionView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_collectionView)]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_collectionView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_collectionView)]];
     
+
+    
     
     
 }
@@ -321,7 +330,7 @@
     
     if (!_collectionView) {
         
-        UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+        CLCollectionViewLayout *flowLayout = [[CLCollectionViewLayout alloc] init];
         flowLayout.minimumLineSpacing = 0;
         flowLayout.minimumInteritemSpacing = 0;
         flowLayout.itemSize = CGSizeMake([UIScreen mainScreen].bounds.size.width,self.view.frame.size.height);
@@ -362,6 +371,12 @@
 }
 
 
+//- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+//
+//
+//}
+
+
 #pragma mark - ScrollViewDelegate
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
@@ -385,11 +400,11 @@
     
     if (!info.selected) {
         
-        [self.selectBtn setBackgroundImage:[UIImage imageNamed:@"def_picker"] forState:UIControlStateNormal];
+        [self.selectBtn setBackgroundImage:[self imageNamed:@"def_picker"] forState:UIControlStateNormal];
         
     } else {
         
-        [self.selectBtn setBackgroundImage:[UIImage imageNamed:@"sel_picker"] forState:UIControlStateNormal];
+        [self.selectBtn setBackgroundImage:[self imageNamed:@"sel_picker"] forState:UIControlStateNormal];
         
     }
     

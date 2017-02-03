@@ -197,6 +197,9 @@
     CGSize originalSize= scrollView.bounds.size;
     CGSize contentSize= scrollView.contentSize;
     
+    NSLog(@"%@",NSStringFromCGSize(originalSize)); // 经过打印发现scrollView 的size是没变化的
+    NSLog(@"%@",NSStringFromCGSize(contentSize)); // 而scrollview的contentsize发生了变化
+    NSLog(@"%@",NSStringFromCGSize(self.imageView.frame.size)); // 而imageView的size也发生了变化
     // 所以放大或者缩小时  就要调整图片的中心位置 不然会发现有部分图片显示不出来
     
     // 图片中心的偏移量

@@ -8,7 +8,7 @@
 //
 
 #import "CLPhotoAssetCollectionViewCell.h"
-
+#import "UIImage+PhotoAsset.h"
 @interface CLPhotoAssetCollectionViewCell ()
 
 
@@ -48,14 +48,25 @@
     if (!_selectBtn) {
         
         _selectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_selectBtn setBackgroundImage:[UIImage imageNamed:@"def_picker"] forState:UIControlStateNormal];
-        [_selectBtn setBackgroundImage:[UIImage imageNamed:@"sel_picker"] forState:UIControlStateHighlighted];
+        [_selectBtn setBackgroundImage:[self imageNamed:@"def_picker"] forState:UIControlStateNormal];
+        [_selectBtn setBackgroundImage:[self imageNamed:@"sel_picker"] forState:UIControlStateHighlighted];
         [_selectBtn addTarget:self action:@selector(selectBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         _selectBtn.translatesAutoresizingMaskIntoConstraints = NO;
         
     }
     return _selectBtn;
 }
+
+
+// 图片路径
+#define CLPhotoWallSrcName(file) [@"CLPhotoWall.bundle" stringByAppendingPathComponent:file]
+
+- (UIImage *)imageNamed:(NSString *)imageName {
+    
+    return [UIImage imageNamed:CLPhotoWallSrcName(imageName)];
+    
+}
+
 
 - (void)selectBtnClick:(UIButton *)sender {
     
