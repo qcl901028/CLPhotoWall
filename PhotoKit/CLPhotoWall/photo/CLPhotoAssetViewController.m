@@ -12,7 +12,7 @@
 #import "CLLargeImageViewController.h"
 #import "CLPhotoAssetConst.h"
 #import "CLPhotoAssetInfo.h"
-#import "UIImage+PhotoAsset.h"
+
 
 #define width [UIScreen mainScreen].bounds.size.width
 #define height [UIScreen mainScreen].bounds.size.height

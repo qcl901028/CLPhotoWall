@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		486D54AD1E44571700DFA99B /* CLPhotoWall.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 486D54AC1E44571700DFA99B /* CLPhotoWall.bundle */; };
-		486D54B01E44584200DFA99B /* UIImage+PhotoAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 486D54AF1E44584200DFA99B /* UIImage+PhotoAsset.m */; };
 		489945781E0A588C00EB1775 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 489945771E0A588C00EB1775 /* main.m */; };
 		4899457B1E0A588C00EB1775 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4899457A1E0A588C00EB1775 /* AppDelegate.m */; };
 		489945811E0A588C00EB1775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4899457F1E0A588C00EB1775 /* Main.storyboard */; };
@@ -53,8 +52,6 @@
 
 /* Begin PBXFileReference section */
 		486D54AC1E44571700DFA99B /* CLPhotoWall.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CLPhotoWall.bundle; sourceTree = "<group>"; };
-		486D54AE1E44584200DFA99B /* UIImage+PhotoAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PhotoAsset.h"; sourceTree = "<group>"; };
-		486D54AF1E44584200DFA99B /* UIImage+PhotoAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PhotoAsset.m"; sourceTree = "<group>"; };
 		489945731E0A588C00EB1775 /* PhotoKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		489945771E0A588C00EB1775 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		489945791E0A588C00EB1775 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -242,8 +239,6 @@
 				48C1DA481E36FB0900E39C0E /* CLPhotoAssetConst.m */,
 				48C1DA491E36FB0900E39C0E /* CLScaleImageView.h */,
 				48C1DA4A1E36FB0900E39C0E /* CLScaleImageView.m */,
-				486D54AE1E44584200DFA99B /* UIImage+PhotoAsset.h */,
-				486D54AF1E44584200DFA99B /* UIImage+PhotoAsset.m */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -415,7 +410,6 @@
 				48C1DA581E36FB0900E39C0E /* CLAlbumTableViewCell.m in Sources */,
 				48C1DA5D1E36FB0900E39C0E /* CLLargeImageViewController.m in Sources */,
 				48C1DA5A1E36FB0900E39C0E /* CLPhotoAssetAlbumInfo.m in Sources */,
-				486D54B01E44584200DFA99B /* UIImage+PhotoAsset.m in Sources */,
 				48C1DA601E36FB0900E39C0E /* CLScaleImageView.m in Sources */,
 				48C1DA611E36FB0900E39C0E /* CLPhotoAssetCollectionViewCell.m in Sources */,
 				489945E11E0A6A7200EB1775 /* ViewController.m in Sources */,

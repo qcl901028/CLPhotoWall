@@ -12,7 +12,7 @@
 #import "CLPhotoAssetConst.h"
 #import "CLPhotoAssetInfo.h"
 #import "CLCollectionViewLayout.h"
-#import "UIImage+PhotoAsset.h"
+
 
 
 @interface CLLargeImageViewController ()<UICollectionViewDelegateFlowLayout, UICollectionViewDataSource,LargeImageCollectionViewDelegate,UINavigationControllerDelegate>

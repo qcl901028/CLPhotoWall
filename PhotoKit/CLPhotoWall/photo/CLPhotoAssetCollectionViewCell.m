@@ -8,7 +8,7 @@
 //
 
 #import "CLPhotoAssetCollectionViewCell.h"
-#import "UIImage+PhotoAsset.h"
+
 @interface CLPhotoAssetCollectionViewCell ()
 
 

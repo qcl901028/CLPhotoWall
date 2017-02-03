@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name         = 'CLPhotoWall'
-    s.version      = '1.0.2'
+    s.version      = '1.0.3'
     s.summary      = 'An easy way to select photos from systemPhotoAsset.'
     s.homepage     = 'https://github.com/qcl901028/CLPhotoWall'
     s.license      = 'MIT'
